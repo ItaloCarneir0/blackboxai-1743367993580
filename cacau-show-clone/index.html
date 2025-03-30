@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cacau Show - Chocolates Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-red-600">CACAU SHOW</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-700 hover:text-red-600">Home</a>
+                <a href="#" class="text-gray-700 hover:text-red-600">Produtos</a>
+                <a href="#" class="text-gray-700 hover:text-red-600">Ofertas</a>
+                <a href="cart.html" class="text-gray-700 hover:text-red-600">Carrinho</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <a href="cart.html" class="relative">
+                    <i class="fas fa-shopping-cart text-xl text-gray-700"></i>
+                    <span id="cart-count" class="absolute -top-2 -right-2 bg-red-600 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">0</span>
+                </a>
+                <button class="md:hidden">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-red-600 to-red-800 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Chocolates Premium</h1>
+            <p class="text-xl mb-8">Os melhores ovos de Páscoa do Brasil</p>
+            <a href="#products" class="bg-white text-red-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Compre Agora</a>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="products" class="py-12 container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Nossos Produtos</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Product Card 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+                <a href="product.html">
+                    <img src="https://images.pexels.com/photos/6605313/pexels-photo-6605313.jpeg" alt="Ovo de Páscoa" class="w-full h-48 object-cover">
+                </a>
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg mb-2">Ovo de Páscoa ao Leite Bytes Fone Azul 200g</h3>
+                    <div class="flex justify-between items-center">
+                        <span class="text-red-600 font-bold">R$ 49,90</span>
+                        <button class="bg-red-600 text-white px-3 py-1 rounded hover:bg-red-700 transition">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Additional product cards would go here -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Cacau Show</h3>
+                    <p>A melhor experiência em chocolates finos desde 1988.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Links Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-red-400">Sobre Nós</a></li>
+                        <li><a href="#" class="hover:text-red-400">Nossas Lojas</a></li>
+                        <li><a href="#" class="hover:text-red-400">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Redes Sociais</h3>
+                    <div class="flex space-x-4">
+                        <a href="#"><i class="fab fa-facebook-f text-xl"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#"><i class="fab fa-twitter text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2023 Cacau Show. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
